@@ -15,14 +15,14 @@
 
 </head>
 <body>
-    <header class="header-mobile">
+    <header>
        <img src="./assets/images/logo.svg" alt="Logo do site de Noticias W.">
 
   <button>
     <img src="./assets/images/icon-menu.svg" alt="icone do menu hamburger">
   </button>
 
-          <nav>
+          <nav class="mobile">
             <button>
               <img src="./assets/images/icon-menu-close.svg" alt="Icone de X para fechar o menu">
             </button>
@@ -33,12 +33,22 @@
             <a href="#">Trending</a>
             <a href="#">Categories</a>
           </nav>
+
+          <nav class="desktop">
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+          </nav>
        </header>
 
     <main>
         <section class="primeira-seção">
-<img src="./assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
-
+          <picture>
+            <source media="(min-width: 700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
+          </picture>
 <h1>The bright future of Web 3.0?</h1>
 
 <p>We dive into the next evolution of the web that claims to bring the power of platforms into people's hands. But is she really keeping her promise?</p>
